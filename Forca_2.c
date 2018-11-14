@@ -32,15 +32,15 @@ int main(){
 }
 
 void classic(char *palavra){
-	//Vai reservar memÛria para a palavra
+	//Vai reservar mem√≥ria para a palavra
 	palavra = (char*)malloc(47*sizeof(char));
 	
-	//Verificar se h· espaÁo 
+	//Verificar se h√° espa√ßo 
 	if(!palavra){
-		printf("N„o tem memÛria.");
+		printf("N√£o tem mem√≥ria.");
 		return;
 }
-	//Pedir ao usu·rio uma palavra
+	//Pedir ao usu√°rio uma palavra
 	printf("Informe a palavra para o jogo: ");
 	gets(palavra);
 	printf("Palavra: %s", palavra);
@@ -54,13 +54,13 @@ void classic(char *palavra){
 	printf("\n\nTamanho Antes: %d \n", (strlen(palavra))*sizeof(char));
 	
 	
-	//Realocar o tamanho da memÛria para o tamanho da palavra
+	//Realocar o tamanho da mem√≥ria para o tamanho da palavra
 	palavra = (char*)realloc(palavra, cont*sizeof(char));
 	
 	
-	//Verificar se h· memÛria 
+	//Verificar se h√° mem√≥ria 
 	if(!palavra){
-		printf("N„o tem memÛria.");
+		printf("N√£o tem mem√≥ria.");
 		return;
 }
 
@@ -81,12 +81,21 @@ void classic(char *palavra){
 	if(chute.chut == 1){*/
 	
 		do{
+			
 				printf("Descubra uma nova letra:\n");
 			scanf("%c", &chute.letra);
+			
+			
 		for(contador.i = 0; contador.i < cont;contador.i++){
+			printf("\n");
+			
 			if(chute.letra == palavra[contador.i]){
+				
 				chute.all_letras[contador.i] = chute.letra;
+				
 				for(contador.cont_le = 0; contador.cont_le < cont; contador.cont_le++){
+					
+						//printf()
 						printf("%c", chute.all_letras[contador.cont_le]);	
 				}
 				
@@ -99,6 +108,7 @@ void classic(char *palavra){
 			else{
 				printf("__");	
 			}
+			
 		}
 		printf("\n\n");
 		}while(contador.fimp < cont);
