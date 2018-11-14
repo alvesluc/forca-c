@@ -38,9 +38,9 @@ int menu(){
 	"                               1 - Jogar\n"
 	"                            2 - Ver Ranking\n"
 	"                         3 - Cadastrar Palavras\n" 
-	"                             4 - CrÈditos\n" 
+	"                             4 - Cr√©ditos\n" 
 	"                               0 - Sair\n"
-	"\nOpÁ„o: ");
+	"\nOp√ß√£o: ");
 	scanf("%d", &opcao);
 	
 	switch(opcao){
@@ -64,7 +64,7 @@ int menu(){
 		break;
 		
 		default:
-			printf("OpÁ„o inv·lida!");
+			printf("Op√ß√£o inv√°lida!");
 		break;	
 	}
 	return EXIT_SUCCESS;
@@ -86,27 +86,3 @@ int cadastro(){
 	
 	return EXIT_SUCCESS;
 }
-
-/*int cadastrar(){
-	FILE *f = fopen("file.txt", "w");
-if (f == NULL)
-{
-    printf("Error opening file!\n");
-    exit(1);
-}
-
-/* print some text 
-const char *text = "Write this to the file";
-fprintf(f, "Some text: %s\n", text);
-
-/* print integers and floats 
-int i = 1;
-float py = 3.1415927;
-fprintf(f, "Integer: %d, float: %f\n", i, py);
-
-/* printing single chatacters 
-char c = 'A';
-fprintf(f, "A character: %c\n", c);
-
-fclose(f);
-}*/
