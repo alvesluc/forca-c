@@ -4,7 +4,7 @@
 #include <locale.h>
 
 int menu();
-int cadpalavra();
+int cadastro();
 
 enum modo_de_jogo{
 	SAIR,
@@ -38,9 +38,9 @@ int menu(){
 	"                               1 - Jogar\n"
 	"                            2 - Ver Ranking\n"
 	"                         3 - Cadastrar Palavras\n" 
-	"                             4 - Créditos\n" 
+	"                             4 - CrÃ©ditos\n" 
 	"                               0 - Sair\n"
-	"\nOpção: ");
+	"\nOpÃ§Ã£o: ");
 	scanf("%d", &opcao);
 	
 	switch(opcao){
@@ -56,6 +56,7 @@ int menu(){
 		break;
 		
 		case CADASTRAR:
+			cadastro();
 		break;
 		
 		case CREDITOS:
@@ -63,6 +64,17 @@ int menu(){
 	}
 }
 
-int cadpalavra(){
+int cadastro(){
+	FILE * arquivo = NULL;
+	char texto[47];
 	
+	arquivo = fopen("exemplo.txt", "a+");
+	fprintf(arquivo,texto);
+	fflush(arquivo);
+
+	arquivo = fopen("exemplo.txt","a+"); 
+	fgets(texto, 47, arquivo);
+	printf("%s",texto);
+	
+	return EXIT_SUCCESS;
 }
