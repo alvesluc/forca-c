@@ -39,9 +39,9 @@ int menu(){
 	"                               1 - Jogar\n"
 	"                            2 - Ver Ranking\n"
 	"                         3 - Cadastrar Palavras\n" 
-	"                             4 - CrÈditos\n" 
+	"                             4 - Cr√©ditos\n" 
 	"                               0 - Sair\n"
-	"\nOpÁ„o: ");
+	"\nOp√ß√£o: ");
 	scanf("%d", &opcao);
 	
 	switch(opcao){
@@ -66,7 +66,7 @@ int menu(){
 		break;
 		
 		default:
-			printf("OpÁ„o inv·lida!");
+			printf("Op√ß√£o inv√°lida!");
 		break;	
 	}
 	return EXIT_SUCCESS;
@@ -91,9 +91,11 @@ int cadastro(){
 
 int creditos(){
 printf(
-	"                             - Jose lopes -\n"
-	"                             - lael alburquerque -\n"
-	"                             - lucas alves -\n" 
+	"	  	   	  o--------------------o\n"
+	"                          |     Jose Lopes     |\n"
+	"                          |  Lael Alburquerque |\n"
+	"                          |     Lucas Alves    |\n"
+	"		          o--------------------o\n" 
 	);
 }
 
