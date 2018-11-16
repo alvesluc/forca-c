@@ -1,4 +1,4 @@
-//biblioteca de funções do grupo
+//biblioteca de funÃ§Ãµes do grupo
 #include <string.h>
 #include <locale.h>
 #include <stdio.h>
@@ -31,9 +31,9 @@ enum modo_de_jogo opcao;
 	"                               1 - Jogar\n"
 	"                            2 - Ver Ranking\n"
 	"                         3 - Cadastrar Palavras\n" 
-	"                             4 - Créditos\n" 
+	"                             4 - CrÃ©ditos\n" 
 	"                               0 - Sair\n"
-	"\nOpção: ");
+	"\nOpÃ§Ã£o: ");
 	scanf("%d", &opcao);
 	
 	switch(opcao){
@@ -54,10 +54,11 @@ enum modo_de_jogo opcao;
 		break;
 		
 		case CREDITOS:
+			creditos();
 		break;
 		
 		default:
-			printf("Opção inválida!");
+			printf("OpÃ§Ã£o invÃ¡lida!");
 		break;	
 	}
 	return EXIT_SUCCESS;
@@ -79,4 +80,14 @@ int cadastro(){
 	fclose(arquivo);
 	
 	return EXIT_SUCCESS;
+}
+
+int creditos(){
+printf(
+	"	  	   	  o--------------------o\n"
+	"                          |     Jose Lopes     |\n"
+	"                          |  Lael Alburquerque |\n"
+	"                          |     Lucas Alves    |\n"
+	"		          o--------------------o\n" 
+	);
 }
