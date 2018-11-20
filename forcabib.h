@@ -91,3 +91,8 @@ printf(
 	"		          o--------------------o\n" 
 	);
 }
+
+void limpaBuf (void){
+	char c;
+return((c = getchar()) != '\n' && c "= EOF);
+	
